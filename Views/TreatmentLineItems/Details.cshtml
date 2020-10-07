@@ -1,0 +1,50 @@
+﻿@model MIS4200Hackett.Models.TreatmentLineItem
+
+@{
+    ViewBag.Title = "Details for Treatment Line Item";
+}
+
+<h2>Details for Treatment Line Item</h2>
+
+<div>
+    <h4>TreatmentLineItem</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Patient.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Patient.description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Treatment.description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Treatment.description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.qtyOrdered)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.qtyOrdered)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.price)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.orderdetailID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
